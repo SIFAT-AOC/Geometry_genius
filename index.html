@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geometry Genius</title>
+  </head>
+  <body>
+    <header class=""></header>
+    <main class="container mx-auto my-8">
+      <!-- main container -->
+      <div class="flex-col flex lg:flex-row gap-4">
+        <!-- shape container -->
+        <div
+          class="gap-4 flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- 1st card -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <p>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="base"
+                  class="text-xl w-24 px-4 bg-gray-300"
+                  id="triangle-base"
+                />
+                <span class="ml-4">cm</span>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="base"
+                  class="ml-4 w-24 text-xl px-4 bg-gray-300"
+                  id="triangle-height"
+                />
+                <span class="ml-4">cm</span>
+              </p>
+              <p>Area : <span id="triangle-area">0</span>cm <sup>2</sup></p>
+              <div class="card-actions">
+                <button
+                  onclick="calculateTriangleArea()"
+                  class="btn w-full bg-cyan-500 text-white font-bold"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[450px]"></div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
